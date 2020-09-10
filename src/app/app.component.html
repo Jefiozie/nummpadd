@@ -1,0 +1,16 @@
+<h1>Numpad</h1>
+
+<h4>Input:{{$input.value}}</h4>
+
+<h2>
+	Result:{{$result | async}}
+</h2>
+<div class="container">
+	<app-numpads *ngFor="let key of KEYS" [key]="key" (itemSelected)="handleSelection($event)"></app-numpads>
+</div>
+<button class="ce" (click)="$clear.next()">
+  CE
+</button>
+<button class="result" (click)="$showResult.next()">
+  =
+</button>

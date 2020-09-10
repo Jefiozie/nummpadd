@@ -1,0 +1,24 @@
+p {
+  font-family: Lato;
+}
+
+.container{
+   display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90px;
+}
+
+button{
+  width:45px;
+}
+
+.ce{
+  color:black;
+  background-color: mediumseagreen
+}
+.result{
+  color:black;
+  background-color: steelblue
+}
